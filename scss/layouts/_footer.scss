@@ -1,0 +1,63 @@
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid $color-footer-border;
+  &_logo-col {
+    display: flex;
+    flex-direction: column;
+  }
+  &_logo-img{
+    height: 2.2rem;
+  }
+  &_logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+  &_social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  &_social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  &_copyright {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: $color-copyright;
+    margin-top: auto;
+  }
+  &_heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+  }
+  &_contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  &_address {
+    margin-bottom: 2.4rem;
+  }
+  &_nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  &_link:visited,
+  &_link:link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $color-copyright;
+    transition: all 0.3s;
+  }
+  &_link:active,
+  &_link:hover{
+    color: $color-body;
+  }
+}
+.grid-footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}

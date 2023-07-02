@@ -1,0 +1,50 @@
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: $background-nav-cta;
+  color: $color-nav-cta;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: $color-nav-hover;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: $color-nav-cta;
+  color: $color-body;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: $background-white;
+  box-shadow: inset 0 0 0 3px $color-nav-cta;
+}
+
+.btn--form {
+  background-color: $background-btn;
+  color: $background-white;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: $color-nav-cta;
+  color: $color-body;
+}

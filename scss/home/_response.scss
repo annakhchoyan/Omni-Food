@@ -1,0 +1,215 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .header {
+    padding: 0 3.2rem;
+  }
+  .header_nav-list {
+    gap: 3.2rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero_text-box,
+  .hero_img-box {
+    text-align: center;
+  }
+
+  .hero_img {
+    width: 60%;
+  }
+
+  .hero_delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .section-how_number {
+    font-size: 7.4rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .sign-up {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .sign-up_form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+  .header_mob-nav-btn {
+    display: block;
+  }
+
+  .header_nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .header_nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .header_mob-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .header_mob-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .header_nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .header_nav-link:link,
+  .header_nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 44em) {
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer_logo-col,
+  .footer_address-col {
+    grid-column: span 3;
+  }
+  .header_nav {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero_img {
+    width: 80%;
+  }
+  .section-logos_logos img {
+    height: 1.2rem;
+  }
+  .sign-up_img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .sign-up_box:nth-child(6) {
+    grid-row: 5;
+  }
+  .sign-up_img-box {
+    transform: translateY(2.4rem);
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .sign-up {
+    grid-template-columns: 1fr;
+  }
+  .sign-up_text-box {
+    padding: 3.2rem;
+  }
+  .sign-up_img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+}

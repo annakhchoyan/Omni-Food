@@ -1,0 +1,242 @@
+.section-hero {
+  background-color: $background-white;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+  &_description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  &_img {
+    width: 100%;
+  }
+  &_delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 8rem;
+  }
+  &_delivered-imgs {
+    display: flex;
+  }
+  &_delivered-imgs img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    margin-right: -1.6rem;
+    border: 3px solid #fdf2e9;
+  }
+  &_delivered-imgs img:last-child {
+    margin: 0;
+  }
+  &_delivered-text {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &_delivered-text span {
+    color: #cf711f;
+    font-weight: 700;
+  }
+}
+//-----------------------------------
+.section-logos {
+  padding: 4.8rem 0 3.2rem 0;
+  &_h2 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: $color-h2;
+  }
+  &_logos {
+    display: flex;
+    justify-content: space-around;
+  }
+  &_logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+  }
+}
+//--------------------------------------
+.section-how {
+  padding: 9.6rem 0;
+  &_number {
+    font-size: 8.6rem;
+    font-weight: 600;
+    color: $color-how;
+    margin-bottom: 1.2rem;
+  }
+  &_description {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+  &_img-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_img-box::before,
+  &_img-box::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_img-box::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: $background-white;
+    z-index: -2;
+  }
+  &_img-box::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: $background-img-box;
+    z-index: -1;
+  }
+  &_img {
+    width: 35%;
+  }
+}
+//-----------------------------------------------------------
+
+.section-testimonials {
+  background-color: $background-white;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial{
+  &_img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+  }
+  &_text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+  }
+  &_name {
+    font-size: 1.6rem;
+    color: $color-testomials;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  &_item {
+    overflow: hidden;
+  }
+  &_item img {
+    display: block;
+    width: 100%;
+    transition: all 0.4s;
+  }
+  &_item img:hover {
+    transform: scale(1.1);
+  }
+}
+
+//-----------------------------------------------------------
+
+.section-sign-up {
+  padding: 4.8rem 0 12.8rem;
+}
+
+.sign-up {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem $color-shadow2;
+  border-radius: 11px;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-sign-up-back,
+    $background-nav-cta
+  );
+  overflow: hidden;
+  &_text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: $background-btn;
+  }
+  &_text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+  }
+  &_img-box {
+    background-image: linear-gradient(
+        to right bottom,
+        $color-shadow3,
+        $color-shadow4
+      ),
+      url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  &_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+  &_form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  &_form input,
+  &_form select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: $background-white;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px $color-shadow2;
+  }
+  &_form input::placeholder {
+    color: $color-placeholder;
+  }
+  &_*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem $color-focus-shadow;
+  }
+}
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
